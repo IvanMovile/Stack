@@ -1,0 +1,77 @@
+        -:    0:Source:/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__algorithm/for_each.h
+        -:    0:Graph:/Users/ivanmovile/CLionProjects/Stack/cmake-build-debug/_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
+        -:    0:Data:/Users/ivanmovile/CLionProjects/Stack/cmake-build-debug/_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:// -*- C++ -*-
+        -:    2://===----------------------------------------------------------------------===//
+        -:    3://
+        -:    4:// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+        -:    5:// See https://llvm.org/LICENSE.txt for license information.
+        -:    6:// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+        -:    7://
+        -:    8://===----------------------------------------------------------------------===//
+        -:    9:
+        -:   10:#ifndef _LIBCPP___ALGORITHM_FOR_EACH_H
+        -:   11:#define _LIBCPP___ALGORITHM_FOR_EACH_H
+        -:   12:
+        -:   13:#include <__config>
+        -:   14:
+        -:   15:#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
+        -:   16:#  pragma GCC system_header
+        -:   17:#endif
+        -:   18:
+        -:   19:_LIBCPP_BEGIN_NAMESPACE_STD
+        -:   20:
+        -:   21:template <class _InputIterator, class _Function>
+function _ZNSt3__18for_eachB7v160006INS_16reverse_iteratorINS_11__wrap_iterIPPN7testing11EnvironmentEEEEEPFvS5_EEET0_T_SC_SB_ called 1 returned 100% blocks executed 60%
+function _ZNSt3__18for_eachB7v160006INS_11__wrap_iterIPKPN7testing9TestSuiteEEEPFvS4_EEET0_T_SB_SA_ called 1 returned 100% blocks executed 100%
+function _ZNSt3__18for_eachB7v160006INS_11__wrap_iterIPKPN7testing8TestInfoEEEPFvS4_EEET0_T_SB_SA_ called 1 returned 100% blocks executed 100%
+function _ZNSt3__18for_eachB7v160006INS_11__wrap_iterIPKPN7testing17TestEventListenerEEEPFvS4_EEET0_T_SB_SA_ called 0 returned 0% blocks executed 0%
+function _ZNSt3__18for_eachB7v160006INS_11__wrap_iterIPKPN7testing11EnvironmentEEEPFvS4_EEET0_T_SB_SA_ called 1 returned 100% blocks executed 60%
+        4:   22:inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_SINCE_CXX20 _Function for_each(_InputIterator __first,
+        -:   23:                                                                                  _InputIterator __last,
+        -:   24:                                                                                  _Function __f) {
+       19:   25:  for (; __first != __last; ++__first)
+        1:   25-block  0
+        1:   25-block  1
+branch  0 taken 0
+branch  1 taken 1
+    $$$$$:   25-block  2
+        1:   25-block  3
+        2:   25-block  4
+branch  2 taken 1
+branch  3 taken 1
+        1:   25-block  5
+        1:   25-block  6
+       15:   25-block  7
+branch  4 taken 14
+branch  5 taken 1
+       14:   25-block  8
+    $$$$$:   25-block  9
+    $$$$$:   25-block 10
+branch  6 never executed
+branch  7 never executed
+    $$$$$:   25-block 11
+        1:   25-block 12
+        1:   25-block 13
+branch  8 taken 0
+branch  9 taken 1
+    $$$$$:   25-block 14
+       15:   26:    __f(*__first);
+    $$$$$:   26-block  0
+        1:   26-block  1
+       14:   26-block  2
+    $$$$$:   26-block  3
+    $$$$$:   26-block  4
+        4:   27:  return __f;
+        1:   27-block  0
+        1:   27-block  1
+        1:   27-block  2
+    $$$$$:   27-block  3
+        1:   27-block  4
+        -:   28:}
+        -:   29:
+        -:   30:_LIBCPP_END_NAMESPACE_STD
+        -:   31:
+        -:   32:#endif // _LIBCPP___ALGORITHM_FOR_EACH_H

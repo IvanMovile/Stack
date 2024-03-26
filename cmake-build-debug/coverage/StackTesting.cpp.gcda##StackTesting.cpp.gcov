@@ -1,0 +1,2193 @@
+        -:    0:Source:/Users/ivanmovile/CLionProjects/Stack/lib/StackLib/test/StackTesting.cpp
+        -:    0:Graph:/Users/ivanmovile/CLionProjects/Stack/cmake-build-debug/lib/StackLib/test/CMakeFiles/Test.dir/StackTesting.cpp.gcno
+        -:    0:Data:/Users/ivanmovile/CLionProjects/Stack/cmake-build-debug/lib/StackLib/test/CMakeFiles/Test.dir/StackTesting.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "stack.h"
+        -:    2:#include "gtest/gtest.h"
+        -:    3:
+function _ZN30stack_default_constructor_Test8TestBodyEv called 1 returned 100% blocks executed 25%
+function _ZN30stack_default_constructor_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN30stack_default_constructor_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN30stack_default_constructor_TestC1Ev called 1 returned 100% blocks executed 100%
+function _ZN30stack_default_constructor_TestC2Ev called 1 returned 100% blocks executed 100%
+function _ZN30stack_default_constructor_TestD2Ev called 1 returned 100% blocks executed 100%
+        7:    4:TEST(stack, default_constructor)
+        1:    4-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:    4-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:    4-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:    4-block  3
+branch  6 taken 1
+branch  7 taken 0
+        1:    4-block  4
+branch  8 taken 1
+branch  9 taken 0
+        1:    4-block  5
+branch 10 taken 1
+branch 11 taken 0
+        1:    4-block  6
+branch 12 taken 1
+branch 13 taken 0
+        1:    4-block  7
+    $$$$$:    4-block  8
+    $$$$$:    4-block  9
+    $$$$$:    4-block 10
+    $$$$$:    4-block 11
+    $$$$$:    4-block 12
+    $$$$$:    4-block 13
+        1:    4-block 14
+        1:    4-block 15
+        1:    4-block 16
+        1:    4-block 17
+        1:    4-block 18
+        -:    5:{
+        1:    6:    stack<int> s;
+        -:    7:
+        1:    8:    EXPECT_EQ(s.size, 0);
+        1:    8-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:    8-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:    8-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:    8-block  3
+    $$$$$:    8-block  4
+branch  6 never executed
+branch  7 never executed
+    $$$$$:    8-block  5
+branch  8 never executed
+branch  9 never executed
+    $$$$$:    8-block  6
+branch 10 never executed
+branch 11 never executed
+    $$$$$:    8-block  7
+branch 12 never executed
+branch 13 never executed
+    $$$$$:    8-block  8
+    $$$$$:    8-block  9
+    $$$$$:    8-block 10
+    $$$$$:    8-block 11
+        2:    9:    EXPECT_THROW(s.top(), std::runtime_error);
+        1:    9-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:    9-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:    9-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:    9-block  3
+branch  6 taken 1
+branch  7 taken 0
+        1:    9-block  4
+branch  8 taken 0
+branch  9 taken 1
+    $$$$$:    9-block  5
+        1:    9-block  6
+branch 10 taken 1
+branch 11 taken 0
+        1:    9-block  7
+branch 12 taken 1
+branch 13 taken 0
+        1:    9-block  8
+        1:    9-block  9
+branch 14 taken 0
+branch 15 taken 1
+    $$$$$:    9-block 10
+branch 16 never executed
+branch 17 never executed
+    $$$$$:    9-block 11
+    $$$$$:    9-block 12
+branch 18 never executed
+branch 19 never executed
+    $$$$$:    9-block 13
+branch 20 never executed
+branch 21 never executed
+    $$$$$:    9-block 14
+branch 22 never executed
+branch 23 never executed
+    $$$$$:    9-block 15
+branch 24 never executed
+branch 25 never executed
+    $$$$$:    9-block 16
+branch 26 never executed
+branch 27 never executed
+    $$$$$:    9-block 17
+branch 28 never executed
+branch 29 never executed
+    $$$$$:    9-block 18
+branch 30 never executed
+branch 31 never executed
+    $$$$$:    9-block 19
+branch 32 never executed
+branch 33 never executed
+    $$$$$:    9-block 20
+branch 34 never executed
+branch 35 never executed
+    $$$$$:    9-block 21
+branch 36 never executed
+branch 37 never executed
+    $$$$$:    9-block 22
+    $$$$$:    9-block 23
+branch 38 never executed
+branch 39 never executed
+    $$$$$:    9-block 24
+    $$$$$:    9-block 25
+    $$$$$:    9-block 26
+branch 40 never executed
+branch 41 never executed
+    $$$$$:    9-block 27
+        1:    9-block 28
+    $$$$$:    9-block 29
+    $$$$$:    9-block 30
+branch 42 never executed
+branch 43 never executed
+    $$$$$:    9-block 31
+branch 44 never executed
+branch 45 never executed
+    $$$$$:    9-block 32
+branch 46 never executed
+branch 47 never executed
+    $$$$$:    9-block 33
+    $$$$$:    9-block 34
+    $$$$$:    9-block 35
+    $$$$$:    9-block 36
+    $$$$$:    9-block 37
+        2:   10:    EXPECT_THROW(s.pop(), std::runtime_error);
+        1:   10-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   10-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   10-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:   10-block  3
+branch  6 taken 1
+branch  7 taken 0
+        1:   10-block  4
+branch  8 taken 0
+branch  9 taken 1
+    $$$$$:   10-block  5
+        1:   10-block  6
+branch 10 taken 1
+branch 11 taken 0
+        1:   10-block  7
+branch 12 taken 1
+branch 13 taken 0
+        1:   10-block  8
+        1:   10-block  9
+branch 14 taken 1
+branch 15 taken 0
+    $$$$$:   10-block 10
+branch 16 never executed
+branch 17 never executed
+    $$$$$:   10-block 11
+    $$$$$:   10-block 12
+branch 18 never executed
+branch 19 never executed
+    $$$$$:   10-block 13
+branch 20 never executed
+branch 21 never executed
+    $$$$$:   10-block 14
+branch 22 never executed
+branch 23 never executed
+    $$$$$:   10-block 15
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   10-block 16
+branch 26 never executed
+branch 27 never executed
+    $$$$$:   10-block 17
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   10-block 18
+branch 30 never executed
+branch 31 never executed
+    $$$$$:   10-block 19
+branch 32 never executed
+branch 33 never executed
+    $$$$$:   10-block 20
+branch 34 never executed
+branch 35 never executed
+    $$$$$:   10-block 21
+branch 36 never executed
+branch 37 never executed
+    $$$$$:   10-block 22
+    $$$$$:   10-block 23
+branch 38 never executed
+branch 39 never executed
+    $$$$$:   10-block 24
+    $$$$$:   10-block 25
+    $$$$$:   10-block 26
+branch 40 never executed
+branch 41 never executed
+    $$$$$:   10-block 27
+        1:   10-block 28
+    $$$$$:   10-block 29
+    $$$$$:   10-block 30
+branch 42 never executed
+branch 43 never executed
+    $$$$$:   10-block 31
+branch 44 never executed
+branch 45 never executed
+    $$$$$:   10-block 32
+branch 46 never executed
+branch 47 never executed
+    $$$$$:   10-block 33
+    $$$$$:   10-block 34
+    $$$$$:   10-block 35
+    $$$$$:   10-block 36
+        3:   11:}
+    $$$$$:   11-block  0
+    $$$$$:   11-block  1
+    $$$$$:   11-block  2
+    $$$$$:   11-block  3
+        1:   11-block  4
+    $$$$$:   11-block  5
+    $$$$$:   11-block  6
+    $$$$$:   11-block  7
+        1:   11-block  8
+    $$$$$:   11-block  9
+    $$$$$:   11-block 10
+        1:   11-block 11
+    $$$$$:   11-block 12
+    $$$$$:   11-block 13
+        -:   12:
+function _ZN27stack_copy_constructor_Test8TestBodyEv called 1 returned 100% blocks executed 34%
+function _ZN27stack_copy_constructor_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN27stack_copy_constructor_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN27stack_copy_constructor_TestC1Ev called 1 returned 100% blocks executed 100%
+function _ZN27stack_copy_constructor_TestC2Ev called 1 returned 100% blocks executed 100%
+function _ZN27stack_copy_constructor_TestD2Ev called 1 returned 100% blocks executed 100%
+        7:   13:TEST(stack, copy_constructor)
+        1:   13-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   13-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   13-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:   13-block  3
+branch  6 taken 1
+branch  7 taken 0
+        1:   13-block  4
+branch  8 taken 1
+branch  9 taken 0
+        1:   13-block  5
+branch 10 taken 1
+branch 11 taken 0
+        1:   13-block  6
+branch 12 taken 1
+branch 13 taken 0
+        1:   13-block  7
+    $$$$$:   13-block  8
+    $$$$$:   13-block  9
+    $$$$$:   13-block 10
+    $$$$$:   13-block 11
+    $$$$$:   13-block 12
+    $$$$$:   13-block 13
+        1:   13-block 14
+        1:   13-block 15
+        1:   13-block 16
+        1:   13-block 17
+        1:   13-block 18
+        -:   14:{
+        1:   15:    stack<int> s1;
+        -:   16:
+        1:   17:    s1.push(0);
+        1:   17-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   18:    s1.push(1);
+        1:   18-block  0
+branch  0 taken 1
+branch  1 taken 0
+        -:   19:
+        1:   20:    stack<int> s2(s1);
+        1:   20-block  0
+branch  0 taken 1
+branch  1 taken 0
+        -:   21:
+        1:   22:    EXPECT_EQ(s2.size, 2);
+        1:   22-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   22-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   22-block  2
+branch  4 taken 0
+branch  5 taken 1
+        1:   22-block  3
+    $$$$$:   22-block  4
+branch  6 never executed
+branch  7 never executed
+    $$$$$:   22-block  5
+branch  8 never executed
+branch  9 never executed
+    $$$$$:   22-block  6
+branch 10 never executed
+branch 11 never executed
+    $$$$$:   22-block  7
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   22-block  8
+    $$$$$:   22-block  9
+    $$$$$:   22-block 10
+    $$$$$:   22-block 11
+        1:   23:    EXPECT_EQ(s2.top(), 1);
+        1:   23-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   23-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   23-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:   23-block  3
+branch  6 taken 0
+branch  7 taken 1
+        1:   23-block  4
+    $$$$$:   23-block  5
+branch  8 never executed
+branch  9 never executed
+    $$$$$:   23-block  6
+branch 10 never executed
+branch 11 never executed
+    $$$$$:   23-block  7
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   23-block  8
+branch 14 never executed
+branch 15 never executed
+    $$$$$:   23-block  9
+    $$$$$:   23-block 10
+    $$$$$:   23-block 11
+    $$$$$:   23-block 12
+        1:   24:}
+    $$$$$:   24-block  0
+    $$$$$:   24-block  1
+    $$$$$:   24-block  2
+    $$$$$:   24-block  3
+    $$$$$:   24-block  4
+    $$$$$:   24-block  5
+        1:   24-block  6
+    $$$$$:   24-block  7
+    $$$$$:   24-block  8
+    $$$$$:   24-block  9
+        -:   25:
+function _ZN35stack_copy_assignment_operator_Test8TestBodyEv called 1 returned 100% blocks executed 37%
+function _ZN35stack_copy_assignment_operator_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN35stack_copy_assignment_operator_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN35stack_copy_assignment_operator_TestC1Ev called 1 returned 100% blocks executed 100%
+function _ZN35stack_copy_assignment_operator_TestC2Ev called 1 returned 100% blocks executed 100%
+function _ZN35stack_copy_assignment_operator_TestD2Ev called 1 returned 100% blocks executed 100%
+        7:   26:TEST(stack, copy_assignment_operator)
+        1:   26-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   26-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   26-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:   26-block  3
+branch  6 taken 1
+branch  7 taken 0
+        1:   26-block  4
+branch  8 taken 1
+branch  9 taken 0
+        1:   26-block  5
+branch 10 taken 1
+branch 11 taken 0
+        1:   26-block  6
+branch 12 taken 1
+branch 13 taken 0
+        1:   26-block  7
+    $$$$$:   26-block  8
+    $$$$$:   26-block  9
+    $$$$$:   26-block 10
+    $$$$$:   26-block 11
+    $$$$$:   26-block 12
+    $$$$$:   26-block 13
+        1:   26-block 14
+        1:   26-block 15
+        1:   26-block 16
+        1:   26-block 17
+        1:   26-block 18
+        -:   27:{
+        1:   28:    stack<int> s1;
+        1:   29:    stack<int> s2;
+        -:   30:
+        1:   31:    s1.push(0);
+        1:   31-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   32:    s1.push(1);
+        1:   32-block  0
+branch  0 taken 1
+branch  1 taken 0
+        -:   33:
+        1:   34:    s2 = s1;
+        1:   34-block  0
+branch  0 taken 1
+branch  1 taken 0
+        -:   35:
+        1:   36:    EXPECT_EQ(s2.size, s1.size);
+        1:   36-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   36-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   36-block  2
+branch  4 taken 0
+branch  5 taken 1
+        1:   36-block  3
+    $$$$$:   36-block  4
+branch  6 never executed
+branch  7 never executed
+    $$$$$:   36-block  5
+branch  8 never executed
+branch  9 never executed
+    $$$$$:   36-block  6
+branch 10 never executed
+branch 11 never executed
+    $$$$$:   36-block  7
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   36-block  8
+    $$$$$:   36-block  9
+    $$$$$:   36-block 10
+    $$$$$:   36-block 11
+        1:   37:    EXPECT_EQ(s2.top(), s1.top());
+        1:   37-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   37-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   37-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:   37-block  3
+branch  6 taken 1
+branch  7 taken 0
+        1:   37-block  4
+branch  8 taken 0
+branch  9 taken 1
+        1:   37-block  5
+    $$$$$:   37-block  6
+branch 10 never executed
+branch 11 never executed
+    $$$$$:   37-block  7
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   37-block  8
+branch 14 never executed
+branch 15 never executed
+    $$$$$:   37-block  9
+branch 16 never executed
+branch 17 never executed
+    $$$$$:   37-block 10
+    $$$$$:   37-block 11
+    $$$$$:   37-block 12
+    $$$$$:   37-block 13
+        1:   38:}
+    $$$$$:   38-block  0
+    $$$$$:   38-block  1
+    $$$$$:   38-block  2
+    $$$$$:   38-block  3
+    $$$$$:   38-block  4
+        1:   38-block  5
+    $$$$$:   38-block  6
+    $$$$$:   38-block  7
+        -:   39:
+function _ZN27stack_move_constructor_Test8TestBodyEv called 1 returned 100% blocks executed 28%
+function _ZN27stack_move_constructor_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN27stack_move_constructor_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN27stack_move_constructor_TestC1Ev called 1 returned 100% blocks executed 100%
+function _ZN27stack_move_constructor_TestC2Ev called 1 returned 100% blocks executed 100%
+function _ZN27stack_move_constructor_TestD2Ev called 1 returned 100% blocks executed 100%
+        7:   40:TEST(stack, move_constructor)
+        1:   40-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   40-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   40-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:   40-block  3
+branch  6 taken 1
+branch  7 taken 0
+        1:   40-block  4
+branch  8 taken 1
+branch  9 taken 0
+        1:   40-block  5
+branch 10 taken 1
+branch 11 taken 0
+        1:   40-block  6
+branch 12 taken 1
+branch 13 taken 0
+        1:   40-block  7
+    $$$$$:   40-block  8
+    $$$$$:   40-block  9
+    $$$$$:   40-block 10
+    $$$$$:   40-block 11
+    $$$$$:   40-block 12
+    $$$$$:   40-block 13
+        1:   40-block 14
+        1:   40-block 15
+        1:   40-block 16
+        1:   40-block 17
+        1:   40-block 18
+        -:   41:{
+        1:   42:    stack<int> s1;
+        -:   43:
+        1:   44:    s1.push(0);
+        1:   44-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   45:    s1.push(1);
+        1:   45-block  0
+branch  0 taken 1
+branch  1 taken 0
+        -:   46:
+        1:   47:    stack<int> s2(std::move(s1));
+        -:   48:
+        1:   49:    EXPECT_EQ(s1.size, 0);
+        1:   49-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   49-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   49-block  2
+branch  4 taken 0
+branch  5 taken 1
+        1:   49-block  3
+    $$$$$:   49-block  4
+branch  6 never executed
+branch  7 never executed
+    $$$$$:   49-block  5
+branch  8 never executed
+branch  9 never executed
+    $$$$$:   49-block  6
+branch 10 never executed
+branch 11 never executed
+    $$$$$:   49-block  7
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   49-block  8
+    $$$$$:   49-block  9
+    $$$$$:   49-block 10
+    $$$$$:   49-block 11
+        1:   50:    EXPECT_EQ(s2.size, 2);
+        1:   50-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   50-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   50-block  2
+branch  4 taken 0
+branch  5 taken 1
+        1:   50-block  3
+    $$$$$:   50-block  4
+branch  6 never executed
+branch  7 never executed
+    $$$$$:   50-block  5
+branch  8 never executed
+branch  9 never executed
+    $$$$$:   50-block  6
+branch 10 never executed
+branch 11 never executed
+    $$$$$:   50-block  7
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   50-block  8
+    $$$$$:   50-block  9
+    $$$$$:   50-block 10
+    $$$$$:   50-block 11
+        1:   51:    EXPECT_EQ(s2.top(), 1);
+        1:   51-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   51-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   51-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:   51-block  3
+branch  6 taken 0
+branch  7 taken 1
+        1:   51-block  4
+    $$$$$:   51-block  5
+branch  8 never executed
+branch  9 never executed
+    $$$$$:   51-block  6
+branch 10 never executed
+branch 11 never executed
+    $$$$$:   51-block  7
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   51-block  8
+branch 14 never executed
+branch 15 never executed
+    $$$$$:   51-block  9
+    $$$$$:   51-block 10
+    $$$$$:   51-block 11
+    $$$$$:   51-block 12
+        2:   52:    EXPECT_THROW(s1.top(), std::runtime_error);
+        1:   52-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   52-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   52-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:   52-block  3
+branch  6 taken 1
+branch  7 taken 0
+        1:   52-block  4
+branch  8 taken 0
+branch  9 taken 1
+    $$$$$:   52-block  5
+        1:   52-block  6
+branch 10 taken 1
+branch 11 taken 0
+        1:   52-block  7
+branch 12 taken 1
+branch 13 taken 0
+        1:   52-block  8
+        1:   52-block  9
+branch 14 taken 1
+branch 15 taken 0
+    $$$$$:   52-block 10
+branch 16 never executed
+branch 17 never executed
+    $$$$$:   52-block 11
+    $$$$$:   52-block 12
+branch 18 never executed
+branch 19 never executed
+    $$$$$:   52-block 13
+branch 20 never executed
+branch 21 never executed
+    $$$$$:   52-block 14
+branch 22 never executed
+branch 23 never executed
+    $$$$$:   52-block 15
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   52-block 16
+branch 26 never executed
+branch 27 never executed
+    $$$$$:   52-block 17
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   52-block 18
+branch 30 never executed
+branch 31 never executed
+    $$$$$:   52-block 19
+branch 32 never executed
+branch 33 never executed
+    $$$$$:   52-block 20
+branch 34 never executed
+branch 35 never executed
+    $$$$$:   52-block 21
+branch 36 never executed
+branch 37 never executed
+    $$$$$:   52-block 22
+    $$$$$:   52-block 23
+branch 38 never executed
+branch 39 never executed
+    $$$$$:   52-block 24
+    $$$$$:   52-block 25
+    $$$$$:   52-block 26
+branch 40 never executed
+branch 41 never executed
+    $$$$$:   52-block 27
+        1:   52-block 28
+    $$$$$:   52-block 29
+    $$$$$:   52-block 30
+branch 42 never executed
+branch 43 never executed
+    $$$$$:   52-block 31
+branch 44 never executed
+branch 45 never executed
+    $$$$$:   52-block 32
+branch 46 never executed
+branch 47 never executed
+    $$$$$:   52-block 33
+    $$$$$:   52-block 34
+    $$$$$:   52-block 35
+    $$$$$:   52-block 36
+    $$$$$:   52-block 37
+        2:   53:}
+    $$$$$:   53-block  0
+    $$$$$:   53-block  1
+    $$$$$:   53-block  2
+    $$$$$:   53-block  3
+    $$$$$:   53-block  4
+    $$$$$:   53-block  5
+    $$$$$:   53-block  6
+    $$$$$:   53-block  7
+    $$$$$:   53-block  8
+        1:   53-block  9
+    $$$$$:   53-block 10
+    $$$$$:   53-block 11
+        1:   53-block 12
+    $$$$$:   53-block 13
+    $$$$$:   53-block 14
+    $$$$$:   53-block 15
+        -:   54:
+function _ZN35stack_move_assignment_operator_Test8TestBodyEv called 1 returned 100% blocks executed 28%
+function _ZN35stack_move_assignment_operator_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN35stack_move_assignment_operator_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN35stack_move_assignment_operator_TestC1Ev called 1 returned 100% blocks executed 100%
+function _ZN35stack_move_assignment_operator_TestC2Ev called 1 returned 100% blocks executed 100%
+function _ZN35stack_move_assignment_operator_TestD2Ev called 1 returned 100% blocks executed 100%
+        7:   55:TEST(stack, move_assignment_operator)
+        1:   55-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   55-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   55-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:   55-block  3
+branch  6 taken 1
+branch  7 taken 0
+        1:   55-block  4
+branch  8 taken 1
+branch  9 taken 0
+        1:   55-block  5
+branch 10 taken 1
+branch 11 taken 0
+        1:   55-block  6
+branch 12 taken 1
+branch 13 taken 0
+        1:   55-block  7
+    $$$$$:   55-block  8
+    $$$$$:   55-block  9
+    $$$$$:   55-block 10
+    $$$$$:   55-block 11
+    $$$$$:   55-block 12
+    $$$$$:   55-block 13
+        1:   55-block 14
+        1:   55-block 15
+        1:   55-block 16
+        1:   55-block 17
+        1:   55-block 18
+        -:   56:{
+        1:   57:    stack<int> s1;
+        1:   58:    stack<int> s2;
+        -:   59:
+        1:   60:    s1.push(0);
+        1:   60-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   61:    s1.push(1);
+        1:   61-block  0
+branch  0 taken 1
+branch  1 taken 0
+        -:   62:
+        1:   63:    s2 = std::move(s1);
+        -:   64:
+        1:   65:    EXPECT_EQ(s1.size, 0);
+        1:   65-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   65-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   65-block  2
+branch  4 taken 0
+branch  5 taken 1
+        1:   65-block  3
+    $$$$$:   65-block  4
+branch  6 never executed
+branch  7 never executed
+    $$$$$:   65-block  5
+branch  8 never executed
+branch  9 never executed
+    $$$$$:   65-block  6
+branch 10 never executed
+branch 11 never executed
+    $$$$$:   65-block  7
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   65-block  8
+    $$$$$:   65-block  9
+    $$$$$:   65-block 10
+    $$$$$:   65-block 11
+        1:   66:    EXPECT_EQ(s2.size, 2);
+        1:   66-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   66-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   66-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:   66-block  3
+    $$$$$:   66-block  4
+branch  6 never executed
+branch  7 never executed
+    $$$$$:   66-block  5
+branch  8 never executed
+branch  9 never executed
+    $$$$$:   66-block  6
+branch 10 never executed
+branch 11 never executed
+    $$$$$:   66-block  7
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   66-block  8
+    $$$$$:   66-block  9
+    $$$$$:   66-block 10
+    $$$$$:   66-block 11
+        1:   67:    EXPECT_EQ(s2.top(), 1);
+        1:   67-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   67-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   67-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:   67-block  3
+branch  6 taken 0
+branch  7 taken 1
+        1:   67-block  4
+    $$$$$:   67-block  5
+branch  8 never executed
+branch  9 never executed
+    $$$$$:   67-block  6
+branch 10 never executed
+branch 11 never executed
+    $$$$$:   67-block  7
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   67-block  8
+branch 14 never executed
+branch 15 never executed
+    $$$$$:   67-block  9
+    $$$$$:   67-block 10
+    $$$$$:   67-block 11
+    $$$$$:   67-block 12
+        2:   68:    EXPECT_THROW(s1.top(), std::runtime_error);
+        1:   68-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   68-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   68-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:   68-block  3
+branch  6 taken 1
+branch  7 taken 0
+        1:   68-block  4
+branch  8 taken 0
+branch  9 taken 1
+    $$$$$:   68-block  5
+        1:   68-block  6
+branch 10 taken 1
+branch 11 taken 0
+        1:   68-block  7
+branch 12 taken 1
+branch 13 taken 0
+        1:   68-block  8
+        1:   68-block  9
+branch 14 taken 1
+branch 15 taken 0
+    $$$$$:   68-block 10
+branch 16 never executed
+branch 17 never executed
+    $$$$$:   68-block 11
+    $$$$$:   68-block 12
+branch 18 never executed
+branch 19 never executed
+    $$$$$:   68-block 13
+branch 20 never executed
+branch 21 never executed
+    $$$$$:   68-block 14
+branch 22 never executed
+branch 23 never executed
+    $$$$$:   68-block 15
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   68-block 16
+branch 26 never executed
+branch 27 never executed
+    $$$$$:   68-block 17
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   68-block 18
+branch 30 never executed
+branch 31 never executed
+    $$$$$:   68-block 19
+branch 32 never executed
+branch 33 never executed
+    $$$$$:   68-block 20
+branch 34 never executed
+branch 35 never executed
+    $$$$$:   68-block 21
+branch 36 never executed
+branch 37 never executed
+    $$$$$:   68-block 22
+    $$$$$:   68-block 23
+branch 38 never executed
+branch 39 never executed
+    $$$$$:   68-block 24
+    $$$$$:   68-block 25
+    $$$$$:   68-block 26
+branch 40 never executed
+branch 41 never executed
+    $$$$$:   68-block 27
+        1:   68-block 28
+    $$$$$:   68-block 29
+    $$$$$:   68-block 30
+branch 42 never executed
+branch 43 never executed
+    $$$$$:   68-block 31
+branch 44 never executed
+branch 45 never executed
+    $$$$$:   68-block 32
+branch 46 never executed
+branch 47 never executed
+    $$$$$:   68-block 33
+    $$$$$:   68-block 34
+    $$$$$:   68-block 35
+    $$$$$:   68-block 36
+    $$$$$:   68-block 37
+        2:   69:}
+    $$$$$:   69-block  0
+    $$$$$:   69-block  1
+    $$$$$:   69-block  2
+    $$$$$:   69-block  3
+    $$$$$:   69-block  4
+    $$$$$:   69-block  5
+    $$$$$:   69-block  6
+    $$$$$:   69-block  7
+        1:   69-block  8
+    $$$$$:   69-block  9
+    $$$$$:   69-block 10
+        1:   69-block 11
+    $$$$$:   69-block 12
+    $$$$$:   69-block 13
+        -:   70:
+function _ZN19stack_floating_Test8TestBodyEv called 1 returned 100% blocks executed 28%
+function _ZN19stack_floating_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN19stack_floating_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN19stack_floating_TestC1Ev called 1 returned 100% blocks executed 100%
+function _ZN19stack_floating_TestC2Ev called 1 returned 100% blocks executed 100%
+function _ZN19stack_floating_TestD2Ev called 1 returned 100% blocks executed 100%
+        7:   71:TEST(stack, floating)
+        1:   71-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   71-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   71-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:   71-block  3
+branch  6 taken 1
+branch  7 taken 0
+        1:   71-block  4
+branch  8 taken 1
+branch  9 taken 0
+        1:   71-block  5
+branch 10 taken 1
+branch 11 taken 0
+        1:   71-block  6
+branch 12 taken 1
+branch 13 taken 0
+        1:   71-block  7
+    $$$$$:   71-block  8
+    $$$$$:   71-block  9
+    $$$$$:   71-block 10
+    $$$$$:   71-block 11
+    $$$$$:   71-block 12
+    $$$$$:   71-block 13
+        1:   71-block 14
+        1:   71-block 15
+        1:   71-block 16
+        1:   71-block 17
+        1:   71-block 18
+        -:   72:{
+        1:   73:    stack<double> s;
+        -:   74:
+        1:   75:    s.push(0.5);
+        1:   75-block  0
+branch  0 taken 1
+branch  1 taken 0
+        -:   76:
+        1:   77:    EXPECT_EQ(s.size, 1);
+        1:   77-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   77-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   77-block  2
+branch  4 taken 0
+branch  5 taken 1
+        1:   77-block  3
+    $$$$$:   77-block  4
+branch  6 never executed
+branch  7 never executed
+    $$$$$:   77-block  5
+branch  8 never executed
+branch  9 never executed
+    $$$$$:   77-block  6
+branch 10 never executed
+branch 11 never executed
+    $$$$$:   77-block  7
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   77-block  8
+    $$$$$:   77-block  9
+    $$$$$:   77-block 10
+    $$$$$:   77-block 11
+        1:   78:    EXPECT_EQ(s.top(), 0.5);
+        1:   78-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   78-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   78-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:   78-block  3
+branch  6 taken 1
+branch  7 taken 0
+        1:   78-block  4
+    $$$$$:   78-block  5
+branch  8 never executed
+branch  9 never executed
+    $$$$$:   78-block  6
+branch 10 never executed
+branch 11 never executed
+    $$$$$:   78-block  7
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   78-block  8
+branch 14 never executed
+branch 15 never executed
+    $$$$$:   78-block  9
+    $$$$$:   78-block 10
+    $$$$$:   78-block 11
+    $$$$$:   78-block 12
+        -:   79:
+        1:   80:    s.pop();
+        1:   80-block  0
+branch  0 taken 1
+branch  1 taken 0
+        -:   81:
+        2:   82:    EXPECT_THROW(s.top(), std::runtime_error);
+        1:   82-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   82-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   82-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:   82-block  3
+branch  6 taken 1
+branch  7 taken 0
+        1:   82-block  4
+branch  8 taken 0
+branch  9 taken 1
+    $$$$$:   82-block  5
+        1:   82-block  6
+branch 10 taken 1
+branch 11 taken 0
+        1:   82-block  7
+branch 12 taken 1
+branch 13 taken 0
+        1:   82-block  8
+        1:   82-block  9
+branch 14 taken 1
+branch 15 taken 0
+    $$$$$:   82-block 10
+branch 16 never executed
+branch 17 never executed
+    $$$$$:   82-block 11
+    $$$$$:   82-block 12
+branch 18 never executed
+branch 19 never executed
+    $$$$$:   82-block 13
+branch 20 never executed
+branch 21 never executed
+    $$$$$:   82-block 14
+branch 22 never executed
+branch 23 never executed
+    $$$$$:   82-block 15
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   82-block 16
+branch 26 never executed
+branch 27 never executed
+    $$$$$:   82-block 17
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   82-block 18
+branch 30 never executed
+branch 31 never executed
+    $$$$$:   82-block 19
+branch 32 never executed
+branch 33 never executed
+    $$$$$:   82-block 20
+branch 34 never executed
+branch 35 never executed
+    $$$$$:   82-block 21
+branch 36 never executed
+branch 37 never executed
+    $$$$$:   82-block 22
+    $$$$$:   82-block 23
+branch 38 never executed
+branch 39 never executed
+    $$$$$:   82-block 24
+    $$$$$:   82-block 25
+    $$$$$:   82-block 26
+branch 40 never executed
+branch 41 never executed
+    $$$$$:   82-block 27
+        1:   82-block 28
+    $$$$$:   82-block 29
+    $$$$$:   82-block 30
+branch 42 never executed
+branch 43 never executed
+    $$$$$:   82-block 31
+branch 44 never executed
+branch 45 never executed
+    $$$$$:   82-block 32
+branch 46 never executed
+branch 47 never executed
+    $$$$$:   82-block 33
+    $$$$$:   82-block 34
+    $$$$$:   82-block 35
+    $$$$$:   82-block 36
+    $$$$$:   82-block 37
+        2:   83:}
+    $$$$$:   83-block  0
+    $$$$$:   83-block  1
+    $$$$$:   83-block  2
+    $$$$$:   83-block  3
+    $$$$$:   83-block  4
+    $$$$$:   83-block  5
+        1:   83-block  6
+    $$$$$:   83-block  7
+    $$$$$:   83-block  8
+        1:   83-block  9
+    $$$$$:   83-block 10
+    $$$$$:   83-block 11
+        -:   84:
+function _ZN17stack_string_Test8TestBodyEv called 1 returned 100% blocks executed 28%
+function _ZN17stack_string_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN17stack_string_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN17stack_string_TestC1Ev called 1 returned 100% blocks executed 100%
+function _ZN17stack_string_TestC2Ev called 1 returned 100% blocks executed 100%
+function _ZN17stack_string_TestD2Ev called 1 returned 100% blocks executed 100%
+        7:   85:TEST(stack, string)
+        1:   85-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   85-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   85-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:   85-block  3
+branch  6 taken 1
+branch  7 taken 0
+        1:   85-block  4
+branch  8 taken 1
+branch  9 taken 0
+        1:   85-block  5
+branch 10 taken 1
+branch 11 taken 0
+        1:   85-block  6
+branch 12 taken 1
+branch 13 taken 0
+        1:   85-block  7
+    $$$$$:   85-block  8
+    $$$$$:   85-block  9
+    $$$$$:   85-block 10
+    $$$$$:   85-block 11
+    $$$$$:   85-block 12
+    $$$$$:   85-block 13
+        1:   85-block 14
+        1:   85-block 15
+        1:   85-block 16
+        1:   85-block 17
+        1:   85-block 18
+        -:   86:{
+        1:   87:    stack<std::string> s;
+        -:   88:
+        1:   89:    s.push("Hello, world!\n");
+        1:   89-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   89-block  1
+branch  2 taken 1
+branch  3 taken 0
+    $$$$$:   89-block  2
+        -:   90:
+        1:   91:    EXPECT_EQ(s.size, 1);
+        1:   91-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   91-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   91-block  2
+branch  4 taken 0
+branch  5 taken 1
+        1:   91-block  3
+    $$$$$:   91-block  4
+branch  6 never executed
+branch  7 never executed
+    $$$$$:   91-block  5
+branch  8 never executed
+branch  9 never executed
+    $$$$$:   91-block  6
+branch 10 never executed
+branch 11 never executed
+    $$$$$:   91-block  7
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   91-block  8
+    $$$$$:   91-block  9
+    $$$$$:   91-block 10
+    $$$$$:   91-block 11
+        1:   92:    EXPECT_EQ(s.top(), "Hello, world!\n");
+        1:   92-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   92-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   92-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:   92-block  3
+branch  6 taken 0
+branch  7 taken 1
+        1:   92-block  4
+    $$$$$:   92-block  5
+    $$$$$:   92-block  6
+branch  8 never executed
+branch  9 never executed
+    $$$$$:   92-block  7
+branch 10 never executed
+branch 11 never executed
+    $$$$$:   92-block  8
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   92-block  9
+branch 14 never executed
+branch 15 never executed
+    $$$$$:   92-block 10
+    $$$$$:   92-block 11
+    $$$$$:   92-block 12
+    $$$$$:   92-block 13
+        -:   93:
+        1:   94:    s.pop();
+        1:   94-block  0
+branch  0 taken 1
+branch  1 taken 0
+        -:   95:
+        2:   96:    EXPECT_THROW(s.top(), std::runtime_error);
+        1:   96-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   96-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   96-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:   96-block  3
+branch  6 taken 1
+branch  7 taken 0
+        1:   96-block  4
+branch  8 taken 0
+branch  9 taken 1
+    $$$$$:   96-block  5
+        1:   96-block  6
+branch 10 taken 1
+branch 11 taken 0
+        1:   96-block  7
+branch 12 taken 1
+branch 13 taken 0
+        1:   96-block  8
+        1:   96-block  9
+branch 14 taken 1
+branch 15 taken 0
+    $$$$$:   96-block 10
+branch 16 never executed
+branch 17 never executed
+    $$$$$:   96-block 11
+    $$$$$:   96-block 12
+branch 18 never executed
+branch 19 never executed
+    $$$$$:   96-block 13
+branch 20 never executed
+branch 21 never executed
+    $$$$$:   96-block 14
+branch 22 never executed
+branch 23 never executed
+    $$$$$:   96-block 15
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   96-block 16
+branch 26 never executed
+branch 27 never executed
+    $$$$$:   96-block 17
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   96-block 18
+branch 30 never executed
+branch 31 never executed
+    $$$$$:   96-block 19
+branch 32 never executed
+branch 33 never executed
+    $$$$$:   96-block 20
+branch 34 never executed
+branch 35 never executed
+    $$$$$:   96-block 21
+branch 36 never executed
+branch 37 never executed
+    $$$$$:   96-block 22
+    $$$$$:   96-block 23
+branch 38 never executed
+branch 39 never executed
+    $$$$$:   96-block 24
+    $$$$$:   96-block 25
+    $$$$$:   96-block 26
+branch 40 never executed
+branch 41 never executed
+    $$$$$:   96-block 27
+        1:   96-block 28
+    $$$$$:   96-block 29
+    $$$$$:   96-block 30
+branch 42 never executed
+branch 43 never executed
+    $$$$$:   96-block 31
+branch 44 never executed
+branch 45 never executed
+    $$$$$:   96-block 32
+branch 46 never executed
+branch 47 never executed
+    $$$$$:   96-block 33
+    $$$$$:   96-block 34
+    $$$$$:   96-block 35
+    $$$$$:   96-block 36
+    $$$$$:   96-block 37
+        2:   97:}
+    $$$$$:   97-block  0
+    $$$$$:   97-block  1
+    $$$$$:   97-block  2
+    $$$$$:   97-block  3
+    $$$$$:   97-block  4
+    $$$$$:   97-block  5
+        1:   97-block  6
+    $$$$$:   97-block  7
+    $$$$$:   97-block  8
+        1:   97-block  9
+    $$$$$:   97-block 10
+    $$$$$:   97-block 11
+        -:   98:
+function _ZN21stack_destructor_Test8TestBodyEv called 1 returned 100% blocks executed 35%
+function _ZN21stack_destructor_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN21stack_destructor_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN21stack_destructor_TestC1Ev called 1 returned 100% blocks executed 100%
+function _ZN21stack_destructor_TestC2Ev called 1 returned 100% blocks executed 100%
+function _ZN21stack_destructor_TestD2Ev called 1 returned 100% blocks executed 100%
+        7:   99:TEST(stack, destructor)
+        1:   99-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   99-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   99-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:   99-block  3
+branch  6 taken 1
+branch  7 taken 0
+        1:   99-block  4
+branch  8 taken 1
+branch  9 taken 0
+        1:   99-block  5
+branch 10 taken 1
+branch 11 taken 0
+        1:   99-block  6
+branch 12 taken 1
+branch 13 taken 0
+        1:   99-block  7
+    $$$$$:   99-block  8
+    $$$$$:   99-block  9
+    $$$$$:   99-block 10
+    $$$$$:   99-block 11
+    $$$$$:   99-block 12
+    $$$$$:   99-block 13
+        1:   99-block 14
+        1:   99-block 15
+        1:   99-block 16
+        1:   99-block 17
+        1:   99-block 18
+        -:  100:{
+        1:  101:    auto* s = new stack<int>();
+        -:  102:
+        1:  103:    s->push(0);
+        -:  104:
+        1:  105:    EXPECT_EQ(s->top(), 0);
+        1:  105-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:  105-block  1
+branch  2 taken 0
+branch  3 taken 1
+        1:  105-block  2
+    $$$$$:  105-block  3
+branch  4 never executed
+branch  5 never executed
+    $$$$$:  105-block  4
+branch  6 never executed
+branch  7 never executed
+    $$$$$:  105-block  5
+branch  8 never executed
+branch  9 never executed
+    $$$$$:  105-block  6
+branch 10 never executed
+branch 11 never executed
+    $$$$$:  105-block  7
+    $$$$$:  105-block  8
+    $$$$$:  105-block  9
+    $$$$$:  105-block 10
+    $$$$$:  105-block 11
+        -:  106:
+        1:  107:    delete s;
+        1:  107-block  0
+branch  0 taken 0
+branch  1 taken 1
+        1:  107-block  1
+        1:  108:}
+    $$$$$:  108-block  0
+    $$$$$:  108-block  1
+        1:  108-block  2
+        -:  109:
+function _ZN32stack_lvalue_reference_push_Test8TestBodyEv called 1 returned 100% blocks executed 36%
+function _ZN32stack_lvalue_reference_push_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN32stack_lvalue_reference_push_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN32stack_lvalue_reference_push_TestC1Ev called 1 returned 100% blocks executed 100%
+function _ZN32stack_lvalue_reference_push_TestC2Ev called 1 returned 100% blocks executed 100%
+function _ZN32stack_lvalue_reference_push_TestD2Ev called 1 returned 100% blocks executed 100%
+        7:  110:TEST(stack, lvalue_reference_push)
+        1:  110-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:  110-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:  110-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:  110-block  3
+branch  6 taken 1
+branch  7 taken 0
+        1:  110-block  4
+branch  8 taken 1
+branch  9 taken 0
+        1:  110-block  5
+branch 10 taken 1
+branch 11 taken 0
+        1:  110-block  6
+branch 12 taken 1
+branch 13 taken 0
+        1:  110-block  7
+    $$$$$:  110-block  8
+    $$$$$:  110-block  9
+    $$$$$:  110-block 10
+    $$$$$:  110-block 11
+    $$$$$:  110-block 12
+    $$$$$:  110-block 13
+        1:  110-block 14
+        1:  110-block 15
+        1:  110-block 16
+        1:  110-block 17
+        1:  110-block 18
+        -:  111:{
+        1:  112:    std::string str1 = "Hello";
+        1:  113:    std::string str2 = "World";
+        1:  113-block  0
+branch  0 taken 1
+branch  1 taken 0
+        -:  114:
+        1:  115:    stack<std::string> s;
+        -:  116:
+        1:  117:    s.push(str1);
+        1:  117-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:  118:    s.push(str2);
+        1:  118-block  0
+branch  0 taken 1
+branch  1 taken 0
+        -:  119:
+        1:  120:    EXPECT_EQ(s.top(), "World");
+        1:  120-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:  120-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:  120-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:  120-block  3
+branch  6 taken 0
+branch  7 taken 1
+        1:  120-block  4
+    $$$$$:  120-block  5
+    $$$$$:  120-block  6
+branch  8 never executed
+branch  9 never executed
+    $$$$$:  120-block  7
+branch 10 never executed
+branch 11 never executed
+    $$$$$:  120-block  8
+branch 12 never executed
+branch 13 never executed
+    $$$$$:  120-block  9
+branch 14 never executed
+branch 15 never executed
+    $$$$$:  120-block 10
+    $$$$$:  120-block 11
+    $$$$$:  120-block 12
+    $$$$$:  120-block 13
+        1:  121:}
+    $$$$$:  121-block  0
+    $$$$$:  121-block  1
+    $$$$$:  121-block  2
+    $$$$$:  121-block  3
+        1:  121-block  4
+    $$$$$:  121-block  5
+    $$$$$:  121-block  6
+    $$$$$:  121-block  7
+        -:  122:
+function _ZN38stack_const_lvalue_reference_push_Test8TestBodyEv called 1 returned 100% blocks executed 36%
+function _ZN38stack_const_lvalue_reference_push_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN38stack_const_lvalue_reference_push_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN38stack_const_lvalue_reference_push_TestC1Ev called 1 returned 100% blocks executed 100%
+function _ZN38stack_const_lvalue_reference_push_TestC2Ev called 1 returned 100% blocks executed 100%
+function _ZN38stack_const_lvalue_reference_push_TestD2Ev called 1 returned 100% blocks executed 100%
+        7:  123:TEST(stack, const_lvalue_reference_push)
+        1:  123-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:  123-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:  123-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:  123-block  3
+branch  6 taken 1
+branch  7 taken 0
+        1:  123-block  4
+branch  8 taken 1
+branch  9 taken 0
+        1:  123-block  5
+branch 10 taken 1
+branch 11 taken 0
+        1:  123-block  6
+branch 12 taken 1
+branch 13 taken 0
+        1:  123-block  7
+    $$$$$:  123-block  8
+    $$$$$:  123-block  9
+    $$$$$:  123-block 10
+    $$$$$:  123-block 11
+    $$$$$:  123-block 12
+    $$$$$:  123-block 13
+        1:  123-block 14
+        1:  123-block 15
+        1:  123-block 16
+        1:  123-block 17
+        1:  123-block 18
+        -:  124:{
+        1:  125:    const std::string str1 = "Hello";
+        1:  126:    const std::string str2 = "World";
+        1:  126-block  0
+branch  0 taken 1
+branch  1 taken 0
+        -:  127:
+        1:  128:    stack<std::string> s;
+        -:  129:
+        1:  130:    s.push(str1);
+        1:  130-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:  131:    s.push(str2);
+        1:  131-block  0
+branch  0 taken 1
+branch  1 taken 0
+        -:  132:
+        1:  133:    EXPECT_EQ(s.top(), "World");
+        1:  133-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:  133-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:  133-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:  133-block  3
+branch  6 taken 0
+branch  7 taken 1
+        1:  133-block  4
+    $$$$$:  133-block  5
+    $$$$$:  133-block  6
+branch  8 never executed
+branch  9 never executed
+    $$$$$:  133-block  7
+branch 10 never executed
+branch 11 never executed
+    $$$$$:  133-block  8
+branch 12 never executed
+branch 13 never executed
+    $$$$$:  133-block  9
+branch 14 never executed
+branch 15 never executed
+    $$$$$:  133-block 10
+    $$$$$:  133-block 11
+    $$$$$:  133-block 12
+    $$$$$:  133-block 13
+        1:  134:}
+    $$$$$:  134-block  0
+    $$$$$:  134-block  1
+    $$$$$:  134-block  2
+    $$$$$:  134-block  3
+        1:  134-block  4
+    $$$$$:  134-block  5
+    $$$$$:  134-block  6
+    $$$$$:  134-block  7
+        -:  135:
+function _ZN32stack_rvalue_reference_push_Test8TestBodyEv called 1 returned 100% blocks executed 38%
+function _ZN32stack_rvalue_reference_push_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN32stack_rvalue_reference_push_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN32stack_rvalue_reference_push_TestC1Ev called 1 returned 100% blocks executed 100%
+function _ZN32stack_rvalue_reference_push_TestC2Ev called 1 returned 100% blocks executed 100%
+function _ZN32stack_rvalue_reference_push_TestD2Ev called 1 returned 100% blocks executed 100%
+        7:  136:TEST(stack, rvalue_reference_push)
+        1:  136-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:  136-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:  136-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:  136-block  3
+branch  6 taken 1
+branch  7 taken 0
+        1:  136-block  4
+branch  8 taken 1
+branch  9 taken 0
+        1:  136-block  5
+branch 10 taken 1
+branch 11 taken 0
+        1:  136-block  6
+branch 12 taken 1
+branch 13 taken 0
+        1:  136-block  7
+    $$$$$:  136-block  8
+    $$$$$:  136-block  9
+    $$$$$:  136-block 10
+    $$$$$:  136-block 11
+    $$$$$:  136-block 12
+    $$$$$:  136-block 13
+        1:  136-block 14
+        1:  136-block 15
+        1:  136-block 16
+        1:  136-block 17
+        1:  136-block 18
+        -:  137:{
+        1:  138:    stack<std::string> s;
+        -:  139:
+        1:  140:    s.push("Hello");
+        1:  140-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:  140-block  1
+branch  2 taken 1
+branch  3 taken 0
+    $$$$$:  140-block  2
+        1:  141:    s.push("World");
+        1:  141-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:  141-block  1
+branch  2 taken 1
+branch  3 taken 0
+    $$$$$:  141-block  2
+        -:  142:
+        1:  143:    EXPECT_EQ(s.top(), "World");
+        1:  143-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:  143-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:  143-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:  143-block  3
+branch  6 taken 0
+branch  7 taken 1
+        1:  143-block  4
+    $$$$$:  143-block  5
+    $$$$$:  143-block  6
+branch  8 never executed
+branch  9 never executed
+    $$$$$:  143-block  7
+branch 10 never executed
+branch 11 never executed
+    $$$$$:  143-block  8
+branch 12 never executed
+branch 13 never executed
+    $$$$$:  143-block  9
+branch 14 never executed
+branch 15 never executed
+    $$$$$:  143-block 10
+    $$$$$:  143-block 11
+    $$$$$:  143-block 12
+    $$$$$:  143-block 13
+        1:  144:}
+    $$$$$:  144-block  0
+    $$$$$:  144-block  1
+    $$$$$:  144-block  2
+        1:  144-block  3
+    $$$$$:  144-block  4
+    $$$$$:  144-block  5
+        -:  145:
+function _ZN38stack_const_rvalue_reference_push_Test8TestBodyEv called 1 returned 100% blocks executed 31%
+function _ZN38stack_const_rvalue_reference_push_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN38stack_const_rvalue_reference_push_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN38stack_const_rvalue_reference_push_TestC1Ev called 1 returned 100% blocks executed 100%
+function _ZN38stack_const_rvalue_reference_push_TestC2Ev called 1 returned 100% blocks executed 100%
+function _ZN38stack_const_rvalue_reference_push_TestD2Ev called 1 returned 100% blocks executed 100%
+        7:  146:TEST(stack, const_rvalue_reference_push)
+        1:  146-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:  146-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:  146-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:  146-block  3
+branch  6 taken 1
+branch  7 taken 0
+        1:  146-block  4
+branch  8 taken 1
+branch  9 taken 0
+        1:  146-block  5
+branch 10 taken 1
+branch 11 taken 0
+        1:  146-block  6
+branch 12 taken 1
+branch 13 taken 0
+        1:  146-block  7
+    $$$$$:  146-block  8
+    $$$$$:  146-block  9
+    $$$$$:  146-block 10
+    $$$$$:  146-block 11
+    $$$$$:  146-block 12
+    $$$$$:  146-block 13
+        1:  146-block 14
+        1:  146-block 15
+        1:  146-block 16
+        1:  146-block 17
+        1:  146-block 18
+        -:  147:{
+        1:  148:    stack<stack<int>> s;
+        -:  149:
+        1:  150:    s.push(stack<int>());
+        1:  150-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  150-block  1
+        -:  151:
+        1:  152:    EXPECT_EQ(s.top().size, 0);
+        1:  152-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:  152-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:  152-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:  152-block  3
+branch  6 taken 0
+branch  7 taken 1
+        1:  152-block  4
+    $$$$$:  152-block  5
+    $$$$$:  152-block  6
+branch  8 never executed
+branch  9 never executed
+    $$$$$:  152-block  7
+branch 10 never executed
+branch 11 never executed
+    $$$$$:  152-block  8
+branch 12 never executed
+branch 13 never executed
+    $$$$$:  152-block  9
+branch 14 never executed
+branch 15 never executed
+    $$$$$:  152-block 10
+    $$$$$:  152-block 11
+    $$$$$:  152-block 12
+    $$$$$:  152-block 13
+        1:  153:}
+    $$$$$:  153-block  0
+    $$$$$:  153-block  1
+    $$$$$:  153-block  2
+        1:  153-block  3
+    $$$$$:  153-block  4
+    $$$$$:  153-block  5
+        -:  154:
+function _ZN14stack_pop_Test8TestBodyEv called 1 returned 100% blocks executed 27%
+function _ZN14stack_pop_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN14stack_pop_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN14stack_pop_TestC1Ev called 1 returned 100% blocks executed 100%
+function _ZN14stack_pop_TestC2Ev called 1 returned 100% blocks executed 100%
+function _ZN14stack_pop_TestD2Ev called 1 returned 100% blocks executed 100%
+        7:  155:TEST(stack, pop)
+        1:  155-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:  155-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:  155-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:  155-block  3
+branch  6 taken 1
+branch  7 taken 0
+        1:  155-block  4
+branch  8 taken 1
+branch  9 taken 0
+        1:  155-block  5
+branch 10 taken 1
+branch 11 taken 0
+        1:  155-block  6
+branch 12 taken 1
+branch 13 taken 0
+        1:  155-block  7
+    $$$$$:  155-block  8
+    $$$$$:  155-block  9
+    $$$$$:  155-block 10
+    $$$$$:  155-block 11
+    $$$$$:  155-block 12
+    $$$$$:  155-block 13
+        1:  155-block 14
+        1:  155-block 15
+        1:  155-block 16
+        1:  155-block 17
+        1:  155-block 18
+        -:  156:{
+        1:  157:    stack<int> s;
+        -:  158:
+        1:  159:    s.push(1);
+        1:  159-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:  160:    s.pop();
+        1:  160-block  0
+branch  0 taken 1
+branch  1 taken 0
+        -:  161:
+        1:  162:    EXPECT_EQ(s.size, 0);
+        1:  162-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:  162-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:  162-block  2
+branch  4 taken 0
+branch  5 taken 1
+        1:  162-block  3
+    $$$$$:  162-block  4
+branch  6 never executed
+branch  7 never executed
+    $$$$$:  162-block  5
+branch  8 never executed
+branch  9 never executed
+    $$$$$:  162-block  6
+branch 10 never executed
+branch 11 never executed
+    $$$$$:  162-block  7
+branch 12 never executed
+branch 13 never executed
+    $$$$$:  162-block  8
+    $$$$$:  162-block  9
+    $$$$$:  162-block 10
+    $$$$$:  162-block 11
+        2:  163:    EXPECT_THROW(s.pop(), std::runtime_error);
+        1:  163-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:  163-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:  163-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:  163-block  3
+branch  6 taken 1
+branch  7 taken 0
+        1:  163-block  4
+branch  8 taken 0
+branch  9 taken 1
+    $$$$$:  163-block  5
+        1:  163-block  6
+branch 10 taken 1
+branch 11 taken 0
+        1:  163-block  7
+branch 12 taken 1
+branch 13 taken 0
+        1:  163-block  8
+        1:  163-block  9
+branch 14 taken 1
+branch 15 taken 0
+    $$$$$:  163-block 10
+branch 16 never executed
+branch 17 never executed
+    $$$$$:  163-block 11
+    $$$$$:  163-block 12
+branch 18 never executed
+branch 19 never executed
+    $$$$$:  163-block 13
+branch 20 never executed
+branch 21 never executed
+    $$$$$:  163-block 14
+branch 22 never executed
+branch 23 never executed
+    $$$$$:  163-block 15
+branch 24 never executed
+branch 25 never executed
+    $$$$$:  163-block 16
+branch 26 never executed
+branch 27 never executed
+    $$$$$:  163-block 17
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  163-block 18
+branch 30 never executed
+branch 31 never executed
+    $$$$$:  163-block 19
+branch 32 never executed
+branch 33 never executed
+    $$$$$:  163-block 20
+branch 34 never executed
+branch 35 never executed
+    $$$$$:  163-block 21
+branch 36 never executed
+branch 37 never executed
+    $$$$$:  163-block 22
+    $$$$$:  163-block 23
+branch 38 never executed
+branch 39 never executed
+    $$$$$:  163-block 24
+    $$$$$:  163-block 25
+    $$$$$:  163-block 26
+branch 40 never executed
+branch 41 never executed
+    $$$$$:  163-block 27
+        1:  163-block 28
+    $$$$$:  163-block 29
+    $$$$$:  163-block 30
+branch 42 never executed
+branch 43 never executed
+    $$$$$:  163-block 31
+branch 44 never executed
+branch 45 never executed
+    $$$$$:  163-block 32
+branch 46 never executed
+branch 47 never executed
+    $$$$$:  163-block 33
+    $$$$$:  163-block 34
+    $$$$$:  163-block 35
+    $$$$$:  163-block 36
+    $$$$$:  163-block 37
+        2:  164:}
+    $$$$$:  164-block  0
+    $$$$$:  164-block  1
+    $$$$$:  164-block  2
+    $$$$$:  164-block  3
+        1:  164-block  4
+    $$$$$:  164-block  5
+    $$$$$:  164-block  6
+        1:  164-block  7
+    $$$$$:  164-block  8
+    $$$$$:  164-block  9
+        -:  165:
+function _ZN14stack_top_Test8TestBodyEv called 1 returned 100% blocks executed 32%
+function _ZN14stack_top_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN14stack_top_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN14stack_top_TestC1Ev called 1 returned 100% blocks executed 100%
+function _ZN14stack_top_TestC2Ev called 1 returned 100% blocks executed 100%
+function _ZN14stack_top_TestD2Ev called 1 returned 100% blocks executed 100%
+        7:  166:TEST(stack, top)
+        1:  166-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:  166-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:  166-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:  166-block  3
+branch  6 taken 1
+branch  7 taken 0
+        1:  166-block  4
+branch  8 taken 1
+branch  9 taken 0
+        1:  166-block  5
+branch 10 taken 1
+branch 11 taken 0
+        1:  166-block  6
+branch 12 taken 1
+branch 13 taken 0
+        1:  166-block  7
+    $$$$$:  166-block  8
+    $$$$$:  166-block  9
+    $$$$$:  166-block 10
+    $$$$$:  166-block 11
+    $$$$$:  166-block 12
+    $$$$$:  166-block 13
+        1:  166-block 14
+        1:  166-block 15
+        1:  166-block 16
+        1:  166-block 17
+        1:  166-block 18
+        -:  167:{
+        1:  168:    stack<int> s;
+        -:  169:
+        1:  170:    s.push(1);
+        1:  170-block  0
+branch  0 taken 1
+branch  1 taken 0
+        -:  171:
+        1:  172:    EXPECT_EQ(s.size, 1);
+        1:  172-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:  172-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:  172-block  2
+branch  4 taken 0
+branch  5 taken 1
+        1:  172-block  3
+    $$$$$:  172-block  4
+branch  6 never executed
+branch  7 never executed
+    $$$$$:  172-block  5
+branch  8 never executed
+branch  9 never executed
+    $$$$$:  172-block  6
+branch 10 never executed
+branch 11 never executed
+    $$$$$:  172-block  7
+branch 12 never executed
+branch 13 never executed
+    $$$$$:  172-block  8
+    $$$$$:  172-block  9
+    $$$$$:  172-block 10
+    $$$$$:  172-block 11
+        1:  173:    EXPECT_EQ(s.top(), 1);
+        1:  173-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:  173-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:  173-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:  173-block  3
+branch  6 taken 0
+branch  7 taken 1
+        1:  173-block  4
+    $$$$$:  173-block  5
+branch  8 never executed
+branch  9 never executed
+    $$$$$:  173-block  6
+branch 10 never executed
+branch 11 never executed
+    $$$$$:  173-block  7
+branch 12 never executed
+branch 13 never executed
+    $$$$$:  173-block  8
+branch 14 never executed
+branch 15 never executed
+    $$$$$:  173-block  9
+    $$$$$:  173-block 10
+    $$$$$:  173-block 11
+    $$$$$:  173-block 12
+        1:  174:}
+    $$$$$:  174-block  0
+    $$$$$:  174-block  1
+    $$$$$:  174-block  2
+    $$$$$:  174-block  3
+    $$$$$:  174-block  4
+        1:  174-block  5
+    $$$$$:  174-block  6
+    $$$$$:  174-block  7

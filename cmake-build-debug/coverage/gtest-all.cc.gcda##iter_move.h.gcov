@@ -1,0 +1,115 @@
+        -:    0:Source:/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__iterator/iter_move.h
+        -:    0:Graph:/Users/ivanmovile/CLionProjects/Stack/cmake-build-debug/_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
+        -:    0:Data:/Users/ivanmovile/CLionProjects/Stack/cmake-build-debug/_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:// -*- C++ -*-
+        -:    2://===----------------------------------------------------------------------===//
+        -:    3://
+        -:    4:// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+        -:    5:// See https://llvm.org/LICENSE.txt for license information.
+        -:    6:// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+        -:    7://
+        -:    8://===----------------------------------------------------------------------===//
+        -:    9:
+        -:   10:#ifndef _LIBCPP___ITERATOR_ITER_MOVE_H
+        -:   11:#define _LIBCPP___ITERATOR_ITER_MOVE_H
+        -:   12:
+        -:   13:#include <__concepts/class_or_enum.h>
+        -:   14:#include <__config>
+        -:   15:#include <__iterator/iterator_traits.h>
+        -:   16:#include <__type_traits/is_reference.h>
+        -:   17:#include <__type_traits/remove_cvref.h>
+        -:   18:#include <__utility/declval.h>
+        -:   19:#include <__utility/forward.h>
+        -:   20:#include <__utility/move.h>
+        -:   21:
+        -:   22:#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
+        -:   23:#  pragma GCC system_header
+        -:   24:#endif
+        -:   25:
+        -:   26:_LIBCPP_BEGIN_NAMESPACE_STD
+        -:   27:
+        -:   28:#if _LIBCPP_STD_VER > 17
+        -:   29:
+        -:   30:// [iterator.cust.move]
+        -:   31:
+        -:   32:namespace ranges {
+        -:   33:namespace __iter_move {
+        -:   34:
+        -:   35:void iter_move();
+        -:   36:
+        -:   37:template <class _Tp>
+        -:   38:concept __unqualified_iter_move =
+        -:   39:  __class_or_enum<remove_cvref_t<_Tp>> &&
+        -:   40:  requires (_Tp&& __t) {
+        -:   41:    // NOLINTNEXTLINE(libcpp-robust-against-adl) iter_swap ADL calls should only be made through ranges::iter_swap
+        -:   42:    iter_move(std::forward<_Tp>(__t));
+        -:   43:  };
+        -:   44:
+        -:   45:template<class _Tp>
+        -:   46:concept __move_deref =
+        -:   47:  !__unqualified_iter_move<_Tp> &&
+        -:   48:  requires (_Tp&& __t) {
+        -:   49:    *__t;
+        -:   50:    requires is_lvalue_reference_v<decltype(*__t)>;
+        -:   51:  };
+        -:   52:
+        -:   53:template<class _Tp>
+        -:   54:concept __just_deref =
+        -:   55:  !__unqualified_iter_move<_Tp> &&
+        -:   56:  !__move_deref<_Tp> &&
+        -:   57:  requires (_Tp&& __t) {
+        -:   58:    *__t;
+        -:   59:    requires (!is_lvalue_reference_v<decltype(*__t)>);
+        -:   60:  };
+        -:   61:
+        -:   62:// [iterator.cust.move]
+        -:   63:
+        -:   64:struct __fn {
+        -:   65:  // NOLINTBEGIN(libcpp-robust-against-adl) iter_move ADL calls should only be made through ranges::iter_move
+        -:   66:  template<class _Ip>
+        -:   67:    requires __unqualified_iter_move<_Ip>
+        -:   68:  [[nodiscard]] _LIBCPP_HIDE_FROM_ABI constexpr decltype(auto) operator()(_Ip&& __i) const
+        -:   69:    noexcept(noexcept(iter_move(std::forward<_Ip>(__i))))
+        -:   70:  {
+        -:   71:    return iter_move(std::forward<_Ip>(__i));
+        -:   72:  }
+        -:   73:  // NOLINTEND(libcpp-robust-against-adl)
+        -:   74:
+        -:   75:  template<class _Ip>
+        -:   76:    requires __move_deref<_Ip>
+function _ZNKSt3__16ranges11__iter_move4__fnclB7v160006IRKPPcEEDTclsr3stdE4movedeclsr3stdE7forwardIT_Efp_EEEOS8_ called 0 returned 0% blocks executed 0%
+function _ZNKSt3__16ranges11__iter_move4__fnclB7v160006IRKPNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEDTclsr3stdE4movedeclsr3stdE7forwardIT_Efp_EEEOSD_ called 0 returned 0% blocks executed 0%
+function _ZNKSt3__16ranges11__iter_move4__fnclB7v160006IRKPPN7testing9TestSuiteEEEDTclsr3stdE4movedeclsr3stdE7forwardIT_Efp_EEEOSA_ called 0 returned 0% blocks executed 0%
+    #####:   77:  [[nodiscard]] _LIBCPP_HIDE_FROM_ABI constexpr auto operator()(_Ip&& __i) const
+        -:   78:    noexcept(noexcept(std::move(*std::forward<_Ip>(__i))))
+        -:   79:    -> decltype(      std::move(*std::forward<_Ip>(__i)))
+    #####:   80:    { return          std::move(*std::forward<_Ip>(__i)); }
+    $$$$$:   80-block  0
+    $$$$$:   80-block  1
+    $$$$$:   80-block  2
+        -:   81:
+        -:   82:  template<class _Ip>
+        -:   83:    requires __just_deref<_Ip>
+        -:   84:  [[nodiscard]] _LIBCPP_HIDE_FROM_ABI constexpr auto operator()(_Ip&& __i) const
+        -:   85:    noexcept(noexcept(*std::forward<_Ip>(__i)))
+        -:   86:    -> decltype(      *std::forward<_Ip>(__i))
+        -:   87:    { return          *std::forward<_Ip>(__i); }
+        -:   88:};
+        -:   89:} // namespace __iter_move
+        -:   90:
+        -:   91:inline namespace __cpo {
+        -:   92:  inline constexpr auto iter_move = __iter_move::__fn{};
+        -:   93:} // namespace __cpo
+        -:   94:} // namespace ranges
+        -:   95:
+        -:   96:template<__dereferenceable _Tp>
+        -:   97:  requires requires(_Tp& __t) { { ranges::iter_move(__t) } -> __can_reference; }
+        -:   98:using iter_rvalue_reference_t = decltype(ranges::iter_move(std::declval<_Tp&>()));
+        -:   99:
+        -:  100:#endif // _LIBCPP_STD_VER > 17
+        -:  101:
+        -:  102:_LIBCPP_END_NAMESPACE_STD
+        -:  103:
+        -:  104:#endif // _LIBCPP___ITERATOR_ITER_MOVE_H

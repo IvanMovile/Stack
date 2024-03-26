@@ -1,0 +1,1 @@
+add_library(StackLib INTERFACE Stack.h)

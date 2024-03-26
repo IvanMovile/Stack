@@ -1,0 +1,63 @@
+        -:    0:Source:/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__algorithm/any_of.h
+        -:    0:Graph:/Users/ivanmovile/CLionProjects/Stack/cmake-build-debug/_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
+        -:    0:Data:/Users/ivanmovile/CLionProjects/Stack/cmake-build-debug/_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:// -*- C++ -*-
+        -:    2://===----------------------------------------------------------------------===//
+        -:    3://
+        -:    4:// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+        -:    5:// See https://llvm.org/LICENSE.txt for license information.
+        -:    6:// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+        -:    7://
+        -:    8://===----------------------------------------------------------------------===//
+        -:    9:
+        -:   10:#ifndef _LIBCPP___ALGORITHM_ANY_OF_H
+        -:   11:#define _LIBCPP___ALGORITHM_ANY_OF_H
+        -:   12:
+        -:   13:#include <__config>
+        -:   14:
+        -:   15:#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
+        -:   16:#  pragma GCC system_header
+        -:   17:#endif
+        -:   18:
+        -:   19:_LIBCPP_BEGIN_NAMESPACE_STD
+        -:   20:
+        -:   21:template <class _InputIterator, class _Predicate>
+        -:   22:_LIBCPP_NODISCARD_EXT inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_SINCE_CXX20 bool
+function _ZNSt3__16any_ofB7v160006INS_11__wrap_iterIPKcEEZN7testing8internal12_GLOBAL__N_113IsGlobPatternERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEE3$_0EEbT_SH_T0_ called 5 returned 100% blocks executed 87%
+function _ZNSt3__16any_ofB7v160006INS_11__wrap_iterIPKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEZNK7testing8internal12_GLOBAL__N_114UnitTestFilter11MatchesNameERS8_EUlSF_E_EEbT_SH_T0_ called 57 returned 100% blocks executed 100%
+       62:   23:any_of(_InputIterator __first, _InputIterator __last, _Predicate __pred) {
+      129:   24:  for (; __first != __last; ++__first)
+        5:   24-block  0
+       14:   24-block  1
+branch  0 taken 14
+branch  1 taken 0
+        9:   24-block  2
+       57:   24-block  3
+      115:   24-block  4
+branch  2 taken 72
+branch  3 taken 43
+       58:   24-block  5
+       86:   25:    if (__pred(*__first))
+       14:   25-block  0
+branch  0 taken 5
+branch  1 taken 9
+        9:   25-block  1
+       72:   25-block  2
+branch  2 taken 14
+branch  3 taken 58
+       58:   25-block  3
+       19:   26:      return true;
+        5:   26-block  0
+       14:   26-block  1
+       43:   27:  return false;
+    $$$$$:   27-block  0
+       43:   27-block  1
+       62:   28:}
+        5:   28-block  0
+       57:   28-block  1
+        -:   29:
+        -:   30:_LIBCPP_END_NAMESPACE_STD
+        -:   31:
+        -:   32:#endif // _LIBCPP___ALGORITHM_ANY_OF_H

@@ -1,0 +1,110 @@
+        -:    0:Source:/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__iterator/insert_iterator.h
+        -:    0:Graph:/Users/ivanmovile/CLionProjects/Stack/cmake-build-debug/_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
+        -:    0:Data:/Users/ivanmovile/CLionProjects/Stack/cmake-build-debug/_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:// -*- C++ -*-
+        -:    2://===----------------------------------------------------------------------===//
+        -:    3://
+        -:    4:// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+        -:    5:// See https://llvm.org/LICENSE.txt for license information.
+        -:    6:// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+        -:    7://
+        -:    8://===----------------------------------------------------------------------===//
+        -:    9:
+        -:   10:#ifndef _LIBCPP___ITERATOR_INSERT_ITERATOR_H
+        -:   11:#define _LIBCPP___ITERATOR_INSERT_ITERATOR_H
+        -:   12:
+        -:   13:#include <__config>
+        -:   14:#include <__iterator/iterator.h>
+        -:   15:#include <__iterator/iterator_traits.h>
+        -:   16:#include <__memory/addressof.h>
+        -:   17:#include <__ranges/access.h>
+        -:   18:#include <__utility/move.h>
+        -:   19:#include <cstddef>
+        -:   20:
+        -:   21:#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
+        -:   22:#  pragma GCC system_header
+        -:   23:#endif
+        -:   24:
+        -:   25:_LIBCPP_BEGIN_NAMESPACE_STD
+        -:   26:
+        -:   27:#if _LIBCPP_STD_VER > 17
+        -:   28:template <class _Container>
+        -:   29:using __insert_iterator_iter_t = ranges::iterator_t<_Container>;
+        -:   30:#else
+        -:   31:template <class _Container>
+        -:   32:using __insert_iterator_iter_t = typename _Container::iterator;
+        -:   33:#endif
+        -:   34:
+        -:   35:_LIBCPP_SUPPRESS_DEPRECATED_PUSH
+        -:   36:template <class _Container>
+        -:   37:class _LIBCPP_TEMPLATE_VIS insert_iterator
+        -:   38:#if _LIBCPP_STD_VER <= 14 || !defined(_LIBCPP_ABI_NO_ITERATOR_BASES)
+        -:   39:    : public iterator<output_iterator_tag, void, void, void, void>
+        -:   40:#endif
+        -:   41:{
+        -:   42:_LIBCPP_SUPPRESS_DEPRECATED_POP
+        -:   43:protected:
+        -:   44:    _Container* container;
+        -:   45:    __insert_iterator_iter_t<_Container> iter;
+        -:   46:public:
+        -:   47:    typedef output_iterator_tag iterator_category;
+        -:   48:    typedef void value_type;
+        -:   49:#if _LIBCPP_STD_VER > 17
+        -:   50:    typedef ptrdiff_t difference_type;
+        -:   51:#else
+        -:   52:    typedef void difference_type;
+        -:   53:#endif
+        -:   54:    typedef void pointer;
+        -:   55:    typedef void reference;
+        -:   56:    typedef _Container container_type;
+        -:   57:
+function _ZNSt3__115insert_iteratorINS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEEEEC1B7v160006ERS9_NS_11__wrap_iterIPS7_EE called 3 returned 100% blocks executed 100%
+function _ZNSt3__115insert_iteratorINS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEEEEC2B7v160006ERS9_NS_11__wrap_iterIPS7_EE called 3 returned 100% blocks executed 100%
+function _ZNSt3__115insert_iteratorINS_13unordered_setINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_4hashIS7_EENS_8equal_toIS7_EENS5_IS7_EEEEEC1B7v160006ERSD_NS_21__hash_const_iteratorIPNS_11__hash_nodeIS7_PvEEEE called 3 returned 100% blocks executed 100%
+function _ZNSt3__115insert_iteratorINS_13unordered_setINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_4hashIS7_EENS_8equal_toIS7_EENS5_IS7_EEEEEC2B7v160006ERSD_NS_21__hash_const_iteratorIPNS_11__hash_nodeIS7_PvEEEE called 3 returned 100% blocks executed 100%
+       12:   58:    _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_SINCE_CXX20 insert_iterator(_Container& __x, __insert_iterator_iter_t<_Container> __i)
+       12:   59:        : container(_VSTD::addressof(__x)), iter(__i) {}
+        3:   59-block  0
+        3:   59-block  1
+        3:   59-block  2
+        3:   59-block  3
+        -:   60:    _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_SINCE_CXX20 insert_iterator& operator=(const typename _Container::value_type& __value)
+        -:   61:        {iter = container->insert(iter, __value); ++iter; return *this;}
+        -:   62:#ifndef _LIBCPP_CXX03_LANG
+function _ZNSt3__115insert_iteratorINS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEEEEaSB7v160006EOS7_ called 5 returned 100% blocks executed 100%
+function _ZNSt3__115insert_iteratorINS_13unordered_setINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_4hashIS7_EENS_8equal_toIS7_EENS5_IS7_EEEEEaSB7v160006EOS7_ called 0 returned 0% blocks executed 0%
+        5:   63:    _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_SINCE_CXX20 insert_iterator& operator=(typename _Container::value_type&& __value)
+        5:   64:        {iter = container->insert(iter, _VSTD::move(__value)); ++iter; return *this;}
+        5:   64-block  0
+    $$$$$:   64-block  1
+        -:   65:#endif // _LIBCPP_CXX03_LANG
+function _ZNSt3__115insert_iteratorINS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEEEEdeB7v160006Ev called 5 returned 100% blocks executed 100%
+function _ZNSt3__115insert_iteratorINS_13unordered_setINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_4hashIS7_EENS_8equal_toIS7_EENS5_IS7_EEEEEdeB7v160006Ev called 0 returned 0% blocks executed 0%
+        5:   66:    _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_SINCE_CXX20 insert_iterator& operator*()        {return *this;}
+        5:   66-block  0
+    $$$$$:   66-block  1
+function _ZNSt3__115insert_iteratorINS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEEEEppB7v160006Ev called 5 returned 100% blocks executed 100%
+function _ZNSt3__115insert_iteratorINS_13unordered_setINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_4hashIS7_EENS_8equal_toIS7_EENS5_IS7_EEEEEppB7v160006Ev called 0 returned 0% blocks executed 0%
+        5:   67:    _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_SINCE_CXX20 insert_iterator& operator++()       {return *this;}
+        5:   67-block  0
+    $$$$$:   67-block  1
+        -:   68:    _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_SINCE_CXX20 insert_iterator& operator++(int)    {return *this;}
+        -:   69:};
+        -:   70:
+        -:   71:template <class _Container>
+        -:   72:inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_SINCE_CXX20
+        -:   73:insert_iterator<_Container>
+function _ZNSt3__18inserterB7v160006INS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEEEEENS_15insert_iteratorIT_EERSB_DTclL_ZNS_6ranges5__cpo5beginEEclsr3stdE7declvalISD_EEEE called 3 returned 100% blocks executed 100%
+function _ZNSt3__18inserterB7v160006INS_13unordered_setINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_4hashIS7_EENS_8equal_toIS7_EENS5_IS7_EEEEEENS_15insert_iteratorIT_EERSF_DTclL_ZNS_6ranges5__cpo5beginEEclsr3stdE7declvalISH_EEEE called 3 returned 100% blocks executed 100%
+        6:   74:inserter(_Container& __x, __insert_iterator_iter_t<_Container> __i)
+        -:   75:{
+        6:   76:    return insert_iterator<_Container>(__x, __i);
+        3:   76-block  0
+        3:   76-block  1
+        -:   77:}
+        -:   78:
+        -:   79:_LIBCPP_END_NAMESPACE_STD
+        -:   80:
+        -:   81:#endif // _LIBCPP___ITERATOR_INSERT_ITERATOR_H

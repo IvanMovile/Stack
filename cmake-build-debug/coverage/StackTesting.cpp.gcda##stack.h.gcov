@@ -1,0 +1,514 @@
+        -:    0:Source:/Users/ivanmovile/CLionProjects/Stack/lib/StackLib/test/../stack.h
+        -:    0:Graph:/Users/ivanmovile/CLionProjects/Stack/cmake-build-debug/lib/StackLib/test/CMakeFiles/Test.dir/StackTesting.cpp.gcno
+        -:    0:Data:/Users/ivanmovile/CLionProjects/Stack/cmake-build-debug/lib/StackLib/test/CMakeFiles/Test.dir/StackTesting.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#pragma once
+        -:    2:
+        -:    3:#include <stdexcept>
+        -:    4:#include <utility>
+        -:    5:
+        -:    6:template<class T> class stack
+        -:    7:{
+        -:    8:public:
+        -:    9:    int size;
+        -:   10:
+function _ZN5stackIiEC1Ev called 12 returned 100% blocks executed 100%
+function _ZN5stackIdEC1Ev called 1 returned 100% blocks executed 100%
+function _ZN5stackINSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEEC1Ev called 4 returned 100% blocks executed 100%
+function _ZN5stackIS_IiEEC1Ev called 1 returned 100% blocks executed 100%
+function _ZN5stackIiEC2Ev called 12 returned 100% blocks executed 66%
+function _ZN5stackIdEC2Ev called 1 returned 100% blocks executed 66%
+function _ZN5stackINSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEEC2Ev called 4 returned 100% blocks executed 71%
+function _ZN5stackIS_IiEEC2Ev called 1 returned 100% blocks executed 71%
+       36:   11:    stack() noexcept
+       18:   12:    {
+       18:   13:        size = 0;
+       18:   14:        capacity = 1;
+       18:   15:        stack_pointer = new T[capacity];
+       12:   15-block  0
+branch  0 taken 12
+branch  1 taken 0
+    $$$$$:   15-block  1
+        1:   15-block  2
+branch  2 taken 1
+branch  3 taken 0
+    $$$$$:   15-block  3
+        4:   15-block  4
+branch  4 taken 4
+branch  5 taken 0
+        4:   15-block  5
+branch  6 taken 0
+branch  7 taken 4
+        4:   15-block  6
+        4:   15-block  7
+    $$$$$:   15-block  8
+    $$$$$:   15-block  9
+        1:   15-block 10
+branch  8 taken 1
+branch  9 taken 0
+        1:   15-block 11
+branch 10 taken 0
+branch 11 taken 1
+        1:   15-block 12
+        1:   15-block 13
+    $$$$$:   15-block 14
+    $$$$$:   15-block 15
+       36:   16:    }
+       12:   16-block  0
+        1:   16-block  1
+        4:   16-block  2
+        1:   16-block  3
+       12:   16-block  4
+        1:   16-block  5
+        4:   16-block  6
+        1:   16-block  7
+        -:   17:
+function _ZN5stackIiEC1ERKS0_ called 2 returned 100% blocks executed 100%
+function _ZN5stackIiEC2ERKS0_ called 2 returned 100% blocks executed 100%
+        4:   18:    stack(const stack<T>& src)
+        2:   19:    {
+        2:   20:        size = src.size;
+        2:   21:        capacity = src.capacity;
+        2:   22:        stack_pointer = new T[capacity];
+        -:   23:
+        4:   24:        for (int i = 0; i < size; i++)
+        2:   24-block  0
+        4:   24-block  1
+branch  0 taken 2
+branch  1 taken 2
+        2:   24-block  2
+        -:   25:        {
+        2:   26:            stack_pointer[i] = src.stack_pointer[i];
+        2:   27:        }
+        2:   27-block  0
+        4:   28:    }
+        2:   28-block  0
+        2:   28-block  1
+        -:   29:
+function _ZN5stackIiEC1EOS0_ called 1 returned 100% blocks executed 100%
+function _ZN5stackIiEC2EOS0_ called 1 returned 100% blocks executed 100%
+        2:   30:    stack(stack<T>&& src) noexcept
+        1:   31:    {
+        1:   32:        size = src.size;
+        1:   33:        capacity = src.capacity;
+        1:   34:        stack_pointer = src.stack_pointer;
+        1:   35:        src.size = 0;
+        1:   36:        src.capacity = 0;
+        1:   37:        src.stack_pointer = nullptr;
+        2:   38:    }
+        1:   38-block  0
+        1:   38-block  1
+        -:   39:
+function _ZN5stackIiEaSERKS0_ called 1 returned 100% blocks executed 100%
+        1:   40:    stack<T>& operator=(const stack<T>& other)
+        -:   41:    {
+        1:   42:        if (this != &other)
+        1:   42-block  0
+branch  0 taken 0
+branch  1 taken 1
+        -:   43:        {
+        1:   44:            size = other.size;
+        1:   45:            capacity = other.capacity;
+        1:   46:            delete[] stack_pointer;
+        1:   46-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   46-block  1
+        1:   47:            stack_pointer = new T[capacity];
+        -:   48:
+        3:   49:            for (int i = 0; i < size; i++)
+        1:   49-block  0
+        3:   49-block  1
+branch  0 taken 2
+branch  1 taken 1
+        2:   49-block  2
+        -:   50:            {
+        2:   51:                stack_pointer[i] = other.stack_pointer[i];
+        2:   52:            }
+        2:   52-block  0
+        1:   53:        }
+        1:   53-block  0
+        -:   54:
+        1:   55:        return *this;
+        1:   55-block  0
+        -:   56:    }
+        -:   57:
+function _ZN5stackIiEaSEOS0_ called 2 returned 100% blocks executed 100%
+        2:   58:    stack<T>& operator=(stack<T>&& other) noexcept
+        -:   59:    {
+        2:   60:        size = other.size;
+        2:   61:        capacity = other.capacity;
+        2:   62:        delete[] stack_pointer;
+        2:   62-block  0
+branch  0 taken 2
+branch  1 taken 0
+        2:   62-block  1
+        2:   63:        stack_pointer = other.stack_pointer;
+        2:   64:        other.size = 0;
+        2:   65:        other.capacity = 0;
+        2:   66:        other.stack_pointer = nullptr;
+        -:   67:
+        2:   68:        return *this;
+        2:   68-block  0
+        -:   69:    }
+        -:   70:
+function _ZN5stackIiED1Ev called 15 returned 100% blocks executed 100%
+function _ZN5stackIdED1Ev called 1 returned 100% blocks executed 100%
+function _ZN5stackINSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEED1Ev called 4 returned 100% blocks executed 100%
+function _ZN5stackIS_IiEED1Ev called 1 returned 100% blocks executed 100%
+function _ZN5stackIiED2Ev called 15 returned 100% blocks executed 100%
+function _ZN5stackIdED2Ev called 1 returned 100% blocks executed 100%
+function _ZN5stackINSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEED2Ev called 4 returned 100% blocks executed 71%
+function _ZN5stackIS_IiEED2Ev called 1 returned 100% blocks executed 71%
+       42:   71:    ~stack() noexcept
+       21:   72:    {
+       21:   73:        delete[] stack_pointer;
+       15:   73-block  0
+branch  0 taken 12
+branch  1 taken 3
+       12:   73-block  1
+        1:   73-block  2
+branch  2 taken 1
+branch  3 taken 0
+        1:   73-block  3
+        4:   73-block  4
+branch  4 taken 4
+branch  5 taken 0
+        4:   73-block  5
+    $$$$$:   73-block  6
+        4:   73-block  7
+    $$$$$:   73-block  8
+        4:   73-block  9
+        1:   73-block 10
+branch  6 taken 1
+branch  7 taken 0
+        1:   73-block 11
+    $$$$$:   73-block 12
+        1:   73-block 13
+    $$$$$:   73-block 14
+        1:   73-block 15
+       42:   74:    }
+       15:   74-block  0
+        1:   74-block  1
+        4:   74-block  2
+        1:   74-block  3
+       15:   74-block  4
+        1:   74-block  5
+        4:   74-block  6
+        1:   74-block  7
+        -:   75:
+function _ZN5stackINSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEE4pushERS6_ called 2 returned 100% blocks executed 82%
+        2:   76:    void push(T& element)
+        -:   77:    {
+        2:   78:        if (size == capacity)
+        2:   78-block  0
+branch  0 taken 1
+branch  1 taken 1
+        -:   79:        {
+        1:   80:            capacity *= 2;
+        1:   81:            T* new_stack_pointer = new T[capacity];
+        1:   81-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   81-block  1
+        1:   81-block  2
+    $$$$$:   81-block  3
+        -:   82:
+        2:   83:            for (int i = 0; i < size; i++)
+        1:   83-block  0
+        2:   83-block  1
+branch  0 taken 1
+branch  1 taken 1
+        1:   83-block  2
+        -:   84:            {
+        1:   85:                new_stack_pointer[i] = stack_pointer[i];
+        1:   86:            }
+        1:   86-block  0
+        -:   87:
+        1:   88:            delete[] stack_pointer;
+        1:   88-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   88-block  1
+    $$$$$:   88-block  2
+        1:   88-block  3
+    $$$$$:   88-block  4
+        1:   88-block  5
+        1:   89:            stack_pointer = new_stack_pointer;
+        1:   90:        }
+        1:   90-block  0
+        -:   91:
+        2:   92:        stack_pointer[size++] = element;
+        2:   93:    }
+        2:   93-block  0
+        -:   94:
+function _ZN5stackINSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEE4pushERKS6_ called 2 returned 100% blocks executed 82%
+        2:   95:    void push(const T& element)
+        -:   96:    {
+        2:   97:        if (size == capacity)
+        2:   97-block  0
+branch  0 taken 1
+branch  1 taken 1
+        -:   98:        {
+        1:   99:            capacity *= 2;
+        1:  100:            T* new_stack_pointer = new T[capacity];
+        1:  100-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:  100-block  1
+        1:  100-block  2
+    $$$$$:  100-block  3
+        -:  101:
+        2:  102:            for (int i = 0; i < size; i++)
+        1:  102-block  0
+        2:  102-block  1
+branch  0 taken 1
+branch  1 taken 1
+        1:  102-block  2
+        -:  103:            {
+        1:  104:                new_stack_pointer[i] = stack_pointer[i];
+        1:  105:            }
+        1:  105-block  0
+        -:  106:
+        1:  107:            delete[] stack_pointer;
+        1:  107-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:  107-block  1
+    $$$$$:  107-block  2
+        1:  107-block  3
+    $$$$$:  107-block  4
+        1:  107-block  5
+        1:  108:            stack_pointer = new_stack_pointer;
+        1:  109:        }
+        1:  109-block  0
+        -:  110:
+        2:  111:        stack_pointer[size++] = element;
+        2:  112:    }
+        2:  112-block  0
+        -:  113:
+        -:  114:
+function _ZN5stackIiE4pushEOi called 11 returned 100% blocks executed 100%
+function _ZN5stackIdE4pushEOd called 1 returned 100% blocks executed 22%
+function _ZN5stackINSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEE4pushEOS6_ called 3 returned 100% blocks executed 82%
+function _ZN5stackIS_IiEE4pushEOS0_ called 1 returned 100% blocks executed 11%
+       16:  115:    void push(T&& element)
+        -:  116:    {
+       16:  117:        if (size == capacity)
+       11:  117-block  0
+branch  0 taken 7
+branch  1 taken 4
+        1:  117-block  1
+branch  2 taken 1
+branch  3 taken 0
+        3:  117-block  2
+branch  4 taken 2
+branch  5 taken 1
+        1:  117-block  3
+branch  6 taken 1
+branch  7 taken 0
+        -:  118:        {
+        5:  119:            capacity *= 2;
+        5:  120:            T* new_stack_pointer = new T[capacity];
+        1:  120-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:  120-block  1
+        1:  120-block  2
+    $$$$$:  120-block  3
+    $$$$$:  120-block  4
+branch  2 never executed
+branch  3 never executed
+    $$$$$:  120-block  5
+    $$$$$:  120-block  6
+    $$$$$:  120-block  7
+        -:  121:
+       10:  122:            for (int i = 0; i < size; i++)
+        4:  122-block  0
+        8:  122-block  1
+branch  0 taken 4
+branch  1 taken 4
+        4:  122-block  2
+    $$$$$:  122-block  3
+    $$$$$:  122-block  4
+branch  2 never executed
+branch  3 never executed
+    $$$$$:  122-block  5
+        1:  122-block  6
+        2:  122-block  7
+branch  4 taken 1
+branch  5 taken 1
+        1:  122-block  8
+    $$$$$:  122-block  9
+    $$$$$:  122-block 10
+branch  6 never executed
+branch  7 never executed
+    $$$$$:  122-block 11
+        -:  123:            {
+        5:  124:                new_stack_pointer[i] = stack_pointer[i];
+        5:  125:            }
+        4:  125-block  0
+    $$$$$:  125-block  1
+        1:  125-block  2
+    $$$$$:  125-block  3
+        -:  126:
+        5:  127:            delete[] stack_pointer;
+        4:  127-block  0
+branch  0 taken 4
+branch  1 taken 0
+        4:  127-block  1
+    $$$$$:  127-block  2
+branch  2 never executed
+branch  3 never executed
+    $$$$$:  127-block  3
+        1:  127-block  4
+branch  4 taken 1
+branch  5 taken 0
+        1:  127-block  5
+    $$$$$:  127-block  6
+        1:  127-block  7
+    $$$$$:  127-block  8
+        1:  127-block  9
+    $$$$$:  127-block 10
+branch  6 never executed
+branch  7 never executed
+    $$$$$:  127-block 11
+    $$$$$:  127-block 12
+    $$$$$:  127-block 13
+    $$$$$:  127-block 14
+    $$$$$:  127-block 15
+        5:  128:            stack_pointer = new_stack_pointer;
+        5:  129:        }
+        4:  129-block  0
+    $$$$$:  129-block  1
+        1:  129-block  2
+    $$$$$:  129-block  3
+        -:  130:
+       16:  131:        stack_pointer[size++] = std::move(element);
+       16:  132:    }
+       11:  132-block  0
+        1:  132-block  1
+        3:  132-block  2
+        1:  132-block  3
+        -:  133:
+        -:  134:    void push(const T&& element)
+        -:  135:    {
+        -:  136:        if (size == capacity)
+        -:  137:        {
+        -:  138:            capacity *= 2;
+        -:  139:            T* new_stack_pointer = new T[capacity];
+        -:  140:
+        -:  141:            for (int i = 0; i < size; i++)
+        -:  142:            {
+        -:  143:                new_stack_pointer[i] = stack_pointer[i];
+        -:  144:            }
+        -:  145:
+        -:  146:            delete[] stack_pointer;
+        -:  147:            stack_pointer = new_stack_pointer;
+        -:  148:        }
+        -:  149:
+        -:  150:        stack_pointer[size++] = element;
+        -:  151:    }
+        -:  152:
+function _ZN5stackIiE3popEv called 3 returned 100% blocks executed 66%
+function _ZN5stackIdE3popEv called 1 returned 100% blocks executed 33%
+function _ZN5stackINSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEE3popEv called 1 returned 100% blocks executed 33%
+        5:  153:    void pop()
+        -:  154:    {
+        5:  155:        if (size == 0)
+        3:  155-block  0
+branch  0 taken 1
+branch  1 taken 2
+        1:  155-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:  155-block  2
+branch  4 taken 1
+branch  5 taken 0
+        -:  156:        {
+        2:  157:            throw std::runtime_error("Cannot pop from empty stack.\n");
+        2:  157-block  0
+branch  0 taken 2
+branch  1 taken 0
+        2:  157-block  1
+    $$$$$:  157-block  2
+    $$$$$:  157-block  3
+    $$$$$:  157-block  4
+branch  2 never executed
+branch  3 never executed
+    $$$$$:  157-block  5
+    $$$$$:  157-block  6
+    $$$$$:  157-block  7
+    $$$$$:  157-block  8
+branch  4 never executed
+branch  5 never executed
+    $$$$$:  157-block  9
+    $$$$$:  157-block 10
+    $$$$$:  157-block 11
+        -:  158:        }
+        -:  159:
+        3:  160:        stack_pointer[--size].~T();
+        3:  161:    }
+        1:  161-block  0
+        1:  161-block  1
+        1:  161-block  2
+        -:  162:
+function _ZNK5stackIiE3topEv called 10 returned 100% blocks executed 66%
+function _ZNK5stackIdE3topEv called 2 returned 100% blocks executed 66%
+function _ZNK5stackINSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEE3topEv called 5 returned 100% blocks executed 66%
+function _ZNK5stackIS_IiEE3topEv called 1 returned 100% blocks executed 33%
+       18:  163:    T top() const
+        -:  164:    {
+       18:  165:        if (size == 0)
+       10:  165-block  0
+branch  0 taken 7
+branch  1 taken 3
+        2:  165-block  1
+branch  2 taken 1
+branch  3 taken 1
+        5:  165-block  2
+branch  4 taken 4
+branch  5 taken 1
+        1:  165-block  3
+branch  6 taken 1
+branch  7 taken 0
+        -:  166:        {
+        5:  167:            throw std::runtime_error("Cannot top from empty stack.\n");
+        3:  167-block  0
+branch  0 taken 3
+branch  1 taken 0
+        3:  167-block  1
+    $$$$$:  167-block  2
+    $$$$$:  167-block  3
+        1:  167-block  4
+branch  2 taken 1
+branch  3 taken 0
+        1:  167-block  5
+    $$$$$:  167-block  6
+    $$$$$:  167-block  7
+        1:  167-block  8
+branch  4 taken 1
+branch  5 taken 0
+        1:  167-block  9
+    $$$$$:  167-block 10
+    $$$$$:  167-block 11
+    $$$$$:  167-block 12
+branch  6 never executed
+branch  7 never executed
+    $$$$$:  167-block 13
+    $$$$$:  167-block 14
+    $$$$$:  167-block 15
+        -:  168:        }
+        -:  169:
+       13:  170:        return stack_pointer[size - 1];
+        7:  170-block  0
+        1:  170-block  1
+        4:  170-block  2
+        1:  170-block  3
+    #####:  171:    }
+        -:  172:
+        -:  173:private:
+        -:  174:    int capacity;
+        -:  175:    T* stack_pointer;
+        -:  176:};
